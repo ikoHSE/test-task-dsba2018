@@ -4,4 +4,4 @@ module Task
 where
 
 fib :: [Integer]
-fib = undefined
+fib = 1 : 1 : zipWith (+) fib (tail fib)
