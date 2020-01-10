@@ -1,0 +1,17 @@
+name:                test-task
+version:             0.1.0.0
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  source-dirs:      src
+
+tests:
+  task-tests:
+    source-dirs:      test
+    main: Main.hs
+    dependencies:
+    - tasty
+    - tasty-hspec
+    - test-task
